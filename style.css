@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.header {
+    height: 80px;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.main-wrap {
+    height: 500px;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.main {
+    height: 100%;
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    float:left;
+}
+.sideber {
+    height: 100%;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+    color: white;
+    text-align: center;
+    float:left;
+}
+.footer {
+    height: 80px;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
