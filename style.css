@@ -1,52 +1,103 @@
 body {
     margin: 0;
 }
-
-.header {
+/* 基本のスペース */
+header {
     height: 80px;
     width: 980px;
+    background-color: #b9dbf6;
+    color: #170387;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
-    color: white;
-    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
 }
 .main-wrap {
-    height: 500px;
+    height: 530px;
     width: 980px;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
     text-align: center;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 .main {
     height: 100%;
-    width: 580px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: blue;
-    color: white;
-    text-align: center;
-    float:left;
+    width: 480px;
+    background-color: #b9dbf6;
+    color: #170387;
+    font-size: 20px;
+    float: left;
 }
-.sideber {
+.side {
     height: 100%;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: green;
-    color: white;
-    text-align: center;
-    float:left;
+    width: 250px;
+    background-color: #170387;
+    color:white;
+    float: left;
+    font-size: 24px;
+    padding-top: 10px;
 }
-.footer {
-    height: 80px;
-    width: 980px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
-    color: white;
-    text-align: center;
+/* 中央のメッセージ */
+#gradeMessage {
+    font-size: 55px;
+    font-weight: bold;
+    color: red;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+#mainMessage {
+    font-size: 120px;
+    color: red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    visibility: hidden;
+    background-color: yellow;
+}
+#subMessage {
+    font-size: 28px;
+    color: red;
+}
+/* 入力欄 */
+.input {
+    line-height: 30px;
+    letter-spacing: 10px;
+}
+.group {
+    width: 50px;
+}
+.number {
+    width: 120px;
+}
+#winningGroup3 {
+    width: 30px;
+}
+#winningNumber3 {
+    margin-left: 95px;
+}
+
+/* ボタン */
+button {
+    height: 50px;
+    width: 120px;
+    margin-top: 10px;
+    background-color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: red;
+    border-width: 5px;
+}
+/* その他ラベル */
+.introduction {
+    text-align: left;
+    margin-bottom: 5px;
+}
+.grade {
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-decoration: underline;
 }
