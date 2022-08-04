@@ -4,24 +4,55 @@
   <title>最終プレゼンテーション</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="modules/lodash.min.js"></script>
+  <script type="text/javascript" src="modules/test-boilerplate.js"></script>
   <script src="script.js"></script>
 </head>
 
 <body>
-  <header class="header">ヘッダー</header>
-  <main class="main-wrap">
-    <aside class="sideber">
-      サイドバー１
-    </aside>
-    <article class="main">
-      メインコンテンツ
-    </article>
-    <aside class="sideber">
-      サイドバー２
-    </aside>
-  </main>
-  <footer class="footer">フッター</footer>
+  <header>わくわく たからくじ チェッカー</header>
 
+  <main class="main-wrap">
+    <aside class="side left">
+      <h3 class="introduction">１.当せん番ごうを<br>　入力してね</h3>
+      <p class="grade">１とう</p>
+      <input type="number" class="input group" id="winningGroup1"></input>
+      <span class="group">組</span>
+      <input type="number" class="input number" id="winningNumber1"></input>
+      <p class="grade">２とう</p>
+      <input type="number" class="input group" id="winningGroup21"></input>
+      <span class="group">組</span>
+      <input type="number" class="input number" id="winningNumber21"></input>
+      <input type="number" class="input group" id="winningGroup22"></input>
+      <span class="group">組</span>
+      <input type="number" class="input number" id="winningNumber22"></input>
+      <p class="grade">３とう</p>
+      <span class="group">組 下１けた</span>
+      <input type="number" class="input group" id="winningGroup3"></input>
+      <input type="number" class="input number" id="winningNumber3"></input>
+    </aside>
+
+    <article class="main">
+      <p id="gradeMessage">当たるかな？？</p>
+      <h1 id="mainMessage">あたり</h1>
+      <p id="subMessage">けっかは ↑ に出るよ</p>
+    </article>
+
+    <aside class="side right">
+      <h3 class="introduction">２.持ってる番ごう<br>　を入力してね</h3>
+      <input type="number" class="input group" id="myGroup"></input>
+      <span class="group">組</span>
+      <input type="number" class="input number" id="myNumber"></input>
+
+      <h3 class="introduction">３.もう一回、<br>　持ってる番ごう<br>　を入力してね</h3>
+      <input type="number" class="input group" id="myGroupCheck"></input>
+      <span class="group">組</span>
+      <input type="number" class="input number" id="myNumberCheck"></input>
+
+      <h3 class="introduction">４.ボタンをおそう</h3>
+      <button name="button" onclick="winCheckAll()">けっか</button>
+    </aside>
+
+  </main>
 </body>
-  
 </html>
